@@ -8,6 +8,9 @@ class Server {
     constructor() {
         //Configuración inicial
         this.app = express();
+        this.app.get('/', (req, res) => {
+            res.send("PAGINA DE INICIO")
+        })
         this.port = process.env.PORT;
 
         this.paths = {
