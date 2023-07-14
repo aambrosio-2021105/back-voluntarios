@@ -1,0 +1,20 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "./index.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/"
+      }
+    ],
+    "env": {
+      "PORT": "8080",
+      "MONGODB_CNN": "mongodb://127.0.0.1:27017/gestor_voluntariados",
+      "SECRET_KEY_FOR_TOKEN":"Est03sMyPubl1cK3y2o23"
+    }
+  }
