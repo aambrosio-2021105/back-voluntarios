@@ -1,0 +1,52 @@
+[{
+  "_id": {
+    "$oid": "6493503b2990c0ab608f7c89"
+  },
+  "convocatoria": {
+    "$oid": "6493503b2990c0ab608f7c87"
+  },
+  "aplicaciones_recibidas": 1,
+  "aplicaciones_aceptadas": 0,
+  "aplicaciones_rechazadas": 1,
+  "aplicaciones_pendientes": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "649613051288ff150c1b5f37"
+  },
+  "convocatoria": {
+    "$oid": "649613051288ff150c1b5f35"
+  },
+  "aplicaciones_recibidas": 0,
+  "aplicaciones_aceptadas": 0,
+  "aplicaciones_rechazadas": 0,
+  "aplicaciones_pendientes": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "649613f22d0ac170e63e8c8c"
+  },
+  "convocatoria": {
+    "$oid": "649613f22d0ac170e63e8c8a"
+  },
+  "aplicaciones_recibidas": 0,
+  "aplicaciones_aceptadas": 0,
+  "aplicaciones_rechazadas": 0,
+  "aplicaciones_pendientes": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "649614042d0ac170e63e8c93"
+  },
+  "convocatoria": {
+    "$oid": "649614042d0ac170e63e8c91"
+  },
+  "aplicaciones_recibidas": 5,
+  "aplicaciones_aceptadas": 5,
+  "aplicaciones_rechazadas": 0,
+  "aplicaciones_pendientes": 0,
+  "__v": 0
+}]

@@ -1,0 +1,96 @@
+[{
+  "_id": {
+    "$oid": "649351437318b7bf067e62dd"
+  },
+  "voluntario": {
+    "$oid": "641e8631f3251766b3b74281"
+  },
+  "convocatoria": {
+    "$oid": "6493503b2990c0ab608f7c87"
+  },
+  "estado": "Rechazado",
+  "fecha": {
+    "$date": "2023-06-21T19:36:35.548Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64962d8096e0e51539158762"
+  },
+  "voluntario": {
+    "$oid": "541e8631f3251766b3b74281"
+  },
+  "convocatoria": {
+    "$oid": "649614042d0ac170e63e8c91"
+  },
+  "estado": "Aceptado",
+  "fecha": {
+    "$date": "2023-06-23T23:40:48.696Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64962dc296e0e51539158775"
+  },
+  "voluntario": {
+    "$oid": "341e8631f3251766b3b74281"
+  },
+  "convocatoria": {
+    "$oid": "649614042d0ac170e63e8c91"
+  },
+  "estado": "Aceptado",
+  "fecha": {
+    "$date": "2023-06-23T23:41:54.203Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64962dec96e0e51539158787"
+  },
+  "voluntario": {
+    "$oid": "741e8631f3251766b3b74281"
+  },
+  "convocatoria": {
+    "$oid": "649614042d0ac170e63e8c91"
+  },
+  "estado": "Aceptado",
+  "fecha": {
+    "$date": "2023-06-23T23:42:36.239Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64962e42a145a3e0a7970c0c"
+  },
+  "voluntario": {
+    "$oid": "141e8631f3251766b3b74281"
+  },
+  "convocatoria": {
+    "$oid": "649614042d0ac170e63e8c91"
+  },
+  "estado": "Aceptado",
+  "fecha": {
+    "$date": "2023-06-23T23:44:02.307Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64962e7ea145a3e0a7970c1f"
+  },
+  "voluntario": {
+    "$oid": "641e8631f3251766b3b74281"
+  },
+  "convocatoria": {
+    "$oid": "649614042d0ac170e63e8c91"
+  },
+  "estado": "Aceptado",
+  "fecha": {
+    "$date": "2023-06-23T23:45:02.351Z"
+  },
+  "__v": 0
+}]

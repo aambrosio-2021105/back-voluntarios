@@ -1,0 +1,74 @@
+[{
+  "_id": {
+    "$oid": "649cf4242cbab1d0c9b6c49e"
+  },
+  "nombre": "Teletón",
+  "acerca_de": "Evento benéfico televisivo realizado anualmente",
+  "correo": "teleton@teleton.com",
+  "password": "$2a$10$k.vLrlUSSADSw1WhgIRGg.z4YNL9xbFR97agYE20HgX.xxXCp4LaW",
+  "sitio_web": "https://teleton.com.gt",
+  "telefono": "2382-4343",
+  "direccion": "Km. 18.5 Carretera Panamericana Mixco",
+  "horarios": "Lunes a viernes de 6:00 AM a 10:00 PM",
+  "convocatorias_realizadas": 0,
+  "array_img": [
+    "https://teleton.com.gt/wp-content/uploads/2020/08/isometrico-terapias-teleto%CC%81n-01-1024x956.png",
+    "https://teleton.com.gt/wp-content/uploads/2020/08/LOGO-FOOTER-2022.svg"
+  ],
+  "rol": "ADMIN_FUNDACION",
+  "redes_sociales": {
+    "facebook": "https://www.facebook.com/TeletonGuatemala",
+    "instagram": "https://www.instagram.com/teletonguate/",
+    "twitter": "https://twitter.com/teletonguate"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "649cf4c82cbab1d0c9b6c4a3"
+  },
+  "nombre": "Unicef",
+  "acerca_de": "UNICEF trabaja para salvar la vida de las niñas, niños y adolescentes en Guatemala. Para defender y garantizar el cumplimento de sus derechos.",
+  "correo": "guatemalacity@unicef.org",
+  "password": "$2a$10$fA8w.ci287wg1.Gn65.8ounXpkXf32ckuHvOzza2zfhZhFFr0BsOm",
+  "sitio_web": "https://www.unicef.org/guatemala/",
+  "telefono": "2327-6373",
+  "direccion": "13 calle 8-44 zona 10, Edificio Edyma Plaza nivel 2 Ciudad de Guatemala, Guatemala",
+  "horarios": "Lunes a viernes de 6:00 AM a 10:00 PM",
+  "convocatorias_realizadas": 0,
+  "array_img": [
+    "https://www.unicef.org/guatemala/sites/unicef.org.guatemala/files/styles/hero_extended/public/UNICEF-GUAA2007-00119-Claudio%20VersianiBWLow.jpg?itok=QxVQ-ioH"
+  ],
+  "rol": "ADMIN_FUNDACION",
+  "redes_sociales": {
+    "facebook": "https://www.facebook.com/unicefguatemala/",
+    "instagram": "https://www.instagram.com/unicefguatemala/",
+    "twitter": "https://twitter.com/unicefguatemala"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "649cf7102cbab1d0c9b6c4a8"
+  },
+  "nombre": "Fundación Kinal",
+  "acerca_de": "Kinal es un Centro Educativo privado, no lucrativo, dirigido a la formación técnica profesional de jóvenes y adultos, de beneficio colectivo y asistencia social en favor de los sectores más necesitados de la comunidad.",
+  "correo": "kinal@kinal.edu.gt",
+  "password": "$2a$10$OZtCVacWu6/VxUAYJXvu0..JTJeTJFIo3iQEnEHMVfBKJF2oDBjie",
+  "sitio_web": "https://www.kinal.org.gt",
+  "telefono": "(502) 5601-9555",
+  "direccion": "6a avenida 13-54 Zona 7 Colonia Landívar 01007-Guatemala, Guatemala",
+  "horarios": "Lunes a viernes de 6:00 AM a 6:00 PM",
+  "convocatorias_realizadas": 0,
+  "array_img": [
+    "https://siemprehaciaadelanteguate.com/wp-content/uploads/2021/09/fundacion-kinal-2048x739.png",
+    "https://images.opusdei.org/?url=https://odnmedia.s3.amazonaws.com/image/opus-dei-caaf182b68e1099bf99cf18d4b52ade6.jpg&w=600&output=jpg&il&bg=white"
+  ],
+  "rol": "ADMIN_FUNDACION",
+  "redes_sociales": {
+    "facebook": "https://www.facebook.com/kinal.gt",
+    "instagram": "https://www.instagram.com/fundacionkinal/",
+    "twitter": "..."
+  },
+  "__v": 0
+}]

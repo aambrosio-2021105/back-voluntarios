@@ -1,0 +1,1119 @@
+{
+	"info": {
+		"_postman_id": "3ddac2da-5700-4153-a0c0-e25548dcdbed",
+		"name": "PROYECTO VOLUNTARIADOS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25706485",
+		"_collection_link": "https://universal-meadow-596967.postman.co/workspace/Team-Workspace~d77837ff-9c3d-4f11-8753-ea52c821d045/collection/25706485-3ddac2da-5700-4153-a0c0-e25548dcdbed?action=share&creator=25706485&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Admin CRUD",
+			"item": [
+				{
+					"name": "POST Agregar Admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Steven Penate\",\r\n    \"correo\": \"spenate@corrreo.com\",\r\n    \"password\": \"123456\",\r\n    \"rol\": \"CLIENTE_ROLE\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/admin/agregar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"admin",
+								"agregar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Mostrar Admin",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA2NDFjMzlhZmFjY2E0NTE2NjI3ZGYiLCJub21icmUiOiJTdGV2ZW4gUmFtaXJleiIsImNhcnQiOltdLCJpYXQiOjE2NzgxMzMxNTgsImV4cCI6MTY3ODE0NzU1OH0.vLvNL8JYuSyriW38-K-7k3UzX4iuSL5ntEBrj0D8c3w",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/admin/mostrar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"admin",
+								"mostrar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Editar Admin",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2M2Y3ZWZjOWM1MDk2ODRjZDI4MjlmOWIiLCJub21icmUiOiJNaWNoYWVsIFNhbHZhdGllcnJhIiwiY2FydCI6W3siaXRlbUlkIjoiNjNmNDI0Yjk3N2JiZDk1YTAzN2RmNDcwIiwicXVhbnRpdHkiOjIsIm5vbWJyZSI6IkNQVSBDT05TVFJVSURPIiwicHJlY2lvIjoxMzAwLjk5fSx7Iml0ZW1JZCI6IjYzZjQyNTcyNzdiYmQ5NWEwMzdkZjQ3OCIsInF1YW50aXR5IjoyLCJub21icmUiOiJURUNMQURPIExFTk9WTyBHQU1JTkciLCJwcmVjaW8iOjQ5OS45OX1dLCJpYXQiOjE2NzgxMzM4NDksImV4cCI6MTY3ODE0ODI0OX0.WV1TVzDp71i6yAYFopkkCDG9PQ1ZB1QBavAsSC52pwA",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Steven Ramirez\",\r\n    \"correo\": \"sramirez@corrreo.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/admin/editar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"admin",
+								"editar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Eliminar Admin",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2M2Y3ZWZjOWM1MDk2ODRjZDI4MjlmOWIiLCJub21icmUiOiJNaWNoYWVsIFNhbHZhdGllcnJhIiwiY2FydCI6W3siaXRlbUlkIjoiNjNmNDI0Yjk3N2JiZDk1YTAzN2RmNDcwIiwicXVhbnRpdHkiOjIsIm5vbWJyZSI6IkNQVSBDT05TVFJVSURPIiwicHJlY2lvIjoxMzAwLjk5fSx7Iml0ZW1JZCI6IjYzZjQyNTcyNzdiYmQ5NWEwMzdkZjQ3OCIsInF1YW50aXR5IjoyLCJub21icmUiOiJURUNMQURPIExFTk9WTyBHQU1JTkciLCJwcmVjaW8iOjQ5OS45OX1dLCJpYXQiOjE2NzgxNTU5NjcsImV4cCI6MTY3ODE3MDM2N30.B5WWMJoEmq-6gjoi9LXBU7AN3CFaJa9Yzi8lux0iDWI",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/admin/eliminar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"admin",
+								"eliminar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "FUNCIONES ADMIN",
+			"item": [
+				{
+					"name": "Eliminar Usuario By Admin",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA2NDFjMzlhZmFjY2E0NTE2NjI3ZGYiLCJub21icmUiOiJTdGV2ZW4gUmFtaXJleiIsImNhcnQiOltdLCJpYXQiOjE2NzgzNzgzNDQsImV4cCI6MTY3ODM5Mjc0NH0.hEu8BCMuHN1JwsYdyPG_R5upvcgTlrmzKlg8RNFH120",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/admin/eliminar/usuario/640a2318952be26b432c51f6",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"admin",
+								"eliminar",
+								"usuario",
+								"640a2318952be26b432c51f6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Editar Usuario By Admin",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA2NDFjMzlhZmFjY2E0NTE2NjI3ZGYiLCJub21icmUiOiJTdGV2ZW4gUmFtaXJleiIsImNhcnQiOltdLCJpYXQiOjE2NzgzNzgzNDQsImV4cCI6MTY3ODM5Mjc0NH0.hEu8BCMuHN1JwsYdyPG_R5upvcgTlrmzKlg8RNFH120",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Andy Ambrosio\",\r\n    \"correo\": \"aambrosio@corrreo.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/admin/editar/usuario/640a2318952be26b432c51f6",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"admin",
+								"editar",
+								"usuario",
+								"640a2318952be26b432c51f6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Mostrar Productos comprados por Usuario BY Admin",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA2NDFjMzlhZmFjY2E0NTE2NjI3ZGYiLCJub21icmUiOiJTdGV2ZW4gUmFtaXJleiIsImNhcnQiOltdLCJpYXQiOjE2NzgzODM4ODMsImV4cCI6MTY3ODM5ODI4M30.2EWjL0l9ZETjGMtiYet3HaoHSa1LIA4mAZk8dXZ0KKo",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/admin/mostrar/compras/640a2318952be26b432c51f6",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"admin",
+								"mostrar",
+								"compras",
+								"640a2318952be26b432c51f6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Jhonatan Acalón",
+			"item": [
+				{
+					"name": "Fundacion CRUD",
+					"item": [
+						{
+							"name": "GET mostrar fundacion",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDhmNzI2YmQwMTI2OTlmMDhjZTJlYTQiLCJub21icmUiOiJGdW5kYWNpw7NuIEtpbmFsIiwicm9sIjoiQURNSU5fRlVOREFDSU9OIiwiaWF0IjoxNjg3MTIzMjE2LCJleHAiOjE2ODcxMzc2MTZ9.ZKaKbTpsZmZBGv7-bDOPUvAEzBW-ACgnxw0ozBSsjKE",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/adminFundacion/mostrar",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"adminFundacion",
+										"mostrar"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET todas las fundaciones",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDhmNzI2YmQwMTI2OTlmMDhjZTJlYTQiLCJub21icmUiOiJGdW5kYWNpw7NuIEtpbmFsIiwicm9sIjoiQURNSU5fRlVOREFDSU9OIiwiaWF0IjoxNjg3MTIzMjE2LCJleHAiOjE2ODcxMzc2MTZ9.ZKaKbTpsZmZBGv7-bDOPUvAEzBW-ACgnxw0ozBSsjKE",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/api/adminFundacion/mostrar-all",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"adminFundacion",
+										"mostrar-all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "POST agregar fundacion",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombre\": \"Teletón\",\r\n    \"acerca_de\": \"evento benéfico televisivo realizado anualmente\",\r\n    \"correo\":\"teleton@teleton.com\",\r\n    \"password\": \"123456\",\r\n    \"sitio_web\": \"https://teleton.com.gt\",\r\n    \"telefono\": \"2382-4343\",\r\n    \"direccion\": \"Km. 18.5 Carretera Panamericana Mixco\",\r\n    \"horarios\": \"Lunes a viernes de 6:00 AM a 10:00 PM\",\r\n    \"array_img\": [\"https://teleton.com.gt/wp-content/uploads/2020/08/isometrico-terapias-teleto%CC%81n-01-1024x956.png\", \"https://teleton.com.gt/wp-content/uploads/2020/08/LOGO-FOOTER-2022.svg\"],\r\n    \"redes_sociales\":{\r\n        \"facebook\": \"https://www.facebook.com/TeletonGuatemala\",\r\n        \"instagram\": \"https://www.instagram.com/teletonguate/\",\r\n        \"twitter\": \"https://twitter.com/teletonguate\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/adminFundacion/agregar",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"adminFundacion",
+										"agregar"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PUT editar fundacion",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-token",
+<<<<<<< HEAD
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDkzNGM1NmYxMjAyYmNiYzk2NjJhMjgiLCJub21icmUiOiJUZWxldMOzbiIsInJvbCI6IkFETUlOX0ZVTkRBQ0lPTiIsImlhdCI6MTY4NzM3NTA3NiwiZXhwIjoxNjg3Mzg5NDc2fQ.pb0tEZMLoRs-ntcuLXuCS0fPzdjIbjsNLN5d_WjImWc",
+=======
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDhmNzI2YmQwMTI2OTlmMDhjZTJlYTQiLCJub21icmUiOiJGdW5kYWNpw7NuIEtpbmFsIiwicm9sIjoiQURNSU5fRlVOREFDSU9OIiwiaWF0IjoxNjg3MTIzMjE2LCJleHAiOjE2ODcxMzc2MTZ9.ZKaKbTpsZmZBGv7-bDOPUvAEzBW-ACgnxw0ozBSsjKE",
+>>>>>>> origin/new-rabanales
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombre\": \"Unicef\",\r\n    \"correo\":\"guatemalacity@unicef.org\",\r\n    \"password\": \"123456\",\r\n    \"sitio_web\": \"https://www.unicef.org/guatemala/\",\r\n    \"telefono\": \"2327-6373\",\r\n    \"direccion\": \"13 calle 8-44 zona 10, Edificio Edyma Plaza nivel 2 Ciudad de Guatemala, Guatemala\",\r\n    \"horarios\": \"Lunes a viernes de 6:00 AM a 10:00 PM\",\r\n    \"array_img\": [\"https://www.unicef.org/guatemala/sites/unicef.org.guatemala/files/styles/hero_extended/public/UNICEF-GUAA2007-00119-Claudio%20VersianiBWLow.jpg?itok=QxVQ-ioH\"]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/adminFundacion/editar",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"adminFundacion",
+										"editar"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DELETE eliminar fundacion",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "x-token",
+<<<<<<< HEAD
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDkzNGM1NmYxMjAyYmNiYzk2NjJhMjgiLCJub21icmUiOiJUZWxldMOzbiIsInJvbCI6IkFETUlOX0ZVTkRBQ0lPTiIsImlhdCI6MTY4NzM3NTA3NiwiZXhwIjoxNjg3Mzg5NDc2fQ.pb0tEZMLoRs-ntcuLXuCS0fPzdjIbjsNLN5d_WjImWc",
+=======
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDhjZDkzYTlhMTE4ZjE5N2Y4MTZjMjciLCJub21icmUiOiJUZWxldMOzbiIsInJvbCI6IkFETUlOX0ZVTkRBQ0lPTiIsImlhdCI6MTY4Njk1MjU5MiwiZXhwIjoxNjg2OTY2OTkyfQ.BKI6McOFa2VyvzMe9sOusL6vaCjzTEXO3557xgEp1XU",
+>>>>>>> origin/new-rabanales
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/api/adminFundacion/eliminar",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"adminFundacion",
+										"eliminar"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Convocatoria CRUD",
+					"item": [
+						{
+							"name": "GET mostrar convocatorias",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDhmNzI2YmQwMTI2OTlmMDhjZTJlYTQiLCJub21icmUiOiJVbmljZWYiLCJyb2wiOiJBRE1JTl9GVU5EQUNJT04iLCJpYXQiOjE2ODcxMjM0NzgsImV4cCI6MTY4NzEzNzg3OH0.EDRBTBQyHBXW6YIJ4-ySDF7NnNw1rxBHrn2-eqbCJP8",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/convocatoria/mostrar",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"convocatoria",
+										"mostrar"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+<<<<<<< HEAD
+							"name": "GET mostrar convocatorias cerradas",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDhjZDkyZTlhMTE4ZjE5N2Y4MTZjMjIiLCJub21icmUiOiJGdW5kYWNpw7NuIEtpbmFsIiwicm9sIjoiQURNSU5fRlVOREFDSU9OIiwiaWF0IjoxNjg3NTU2ODUwLCJleHAiOjE2ODc1NzEyNTB9.exr1MmP9r_o8p84K2f-NrQwJivozbaz4FUPCEHQO0xo",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/convocatoria/mostrar-cerradas",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"convocatoria",
+										"mostrar-cerradas"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+=======
+>>>>>>> origin/new-rabanales
+							"name": "GET todas las convocatorias",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDhmNzI2YmQwMTI2OTlmMDhjZTJlYTQiLCJub21icmUiOiJVbmljZWYiLCJyb2wiOiJBRE1JTl9GVU5EQUNJT04iLCJpYXQiOjE2ODcxMjM0NzgsImV4cCI6MTY4NzEzNzg3OH0.EDRBTBQyHBXW6YIJ4-ySDF7NnNw1rxBHrn2-eqbCJP8",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/api/convocatoria/mostrar-all",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"convocatoria",
+										"mostrar-all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+<<<<<<< HEAD
+							"name": "GET filtrar segun departamento",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/convocatoria/mostrar-lugar/ti",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"convocatoria",
+										"mostrar-lugar",
+										"ti"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+=======
+>>>>>>> origin/new-rabanales
+							"name": "POST agregar convocatoria",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-token",
+<<<<<<< HEAD
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDhjZDkyZTlhMTE4ZjE5N2Y4MTZjMjIiLCJub21icmUiOiJGdW5kYWNpw7NuIEtpbmFsIiwicm9sIjoiQURNSU5fRlVOREFDSU9OIiwiaWF0IjoxNjg3NTU2ODUwLCJleHAiOjE2ODc1NzEyNTB9.exr1MmP9r_o8p84K2f-NrQwJivozbaz4FUPCEHQO0xo",
+=======
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDhmNzI2YmQwMTI2OTlmMDhjZTJlYTQiLCJub21icmUiOiJVbmljZWYiLCJyb2wiOiJBRE1JTl9GVU5EQUNJT04iLCJpYXQiOjE2ODcxMjM0NzgsImV4cCI6MTY4NzEzNzg3OH0.EDRBTBQyHBXW6YIJ4-ySDF7NnNw1rxBHrn2-eqbCJP8",
+>>>>>>> origin/new-rabanales
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"titulo\": \"Ayuda a niños con discapacidad\",\r\n    \"descripcion\":\"Apoya en labores como transporte y otro tipo de ayuda para personas discapacitadas\",\r\n    \"lugar\": \"Suchitepequez, Guatemala\",\r\n    \"cupo\": 15,\r\n    \"fechaInicio\": \"2023-06-20\",\r\n    \"horaInicio\": \"07:05:00Z\",\r\n    \"fechaFin\": \"2023-07-01\",\r\n    \"horaFin\": \"14:45:00Z\",\r\n    \"array_img\": [ \"https://definicion.de/wp-content/uploads/2018/09/invidente-1.jpg\" ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/convocatoria/agregar",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"convocatoria",
+										"agregar"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PUT editar convocatoria",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-token",
+<<<<<<< HEAD
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDhjZDkyZTlhMTE4ZjE5N2Y4MTZjMjIiLCJub21icmUiOiJGdW5kYWNpw7NuIEtpbmFsIiwicm9sIjoiQURNSU5fRlVOREFDSU9OIiwiaWF0IjoxNjg3Mzc1MTc5LCJleHAiOjE2ODczODk1Nzl9.eW4PqnUuBaeauR82K2o91G-StV1i3ZOfRS26LAkPF2M",
+=======
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDhmNzI2YmQwMTI2OTlmMDhjZTJlYTQiLCJub21icmUiOiJVbmljZWYiLCJyb2wiOiJBRE1JTl9GVU5EQUNJT04iLCJpYXQiOjE2ODcxMjM0NzgsImV4cCI6MTY4NzEzNzg3OH0.EDRBTBQyHBXW6YIJ4-ySDF7NnNw1rxBHrn2-eqbCJP8",
+>>>>>>> origin/new-rabanales
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"titulo\": \"Transporte de viveres\",\r\n    \"descripcion\": \"Apoya en la movilizacion de 100 libras de granos para alimentacion\",\r\n    \"lugar\": \"Alta Verapaz, Guatemala\",\r\n    \"cupo\": 3,\r\n    \"fechaInicio\": \"2023-06-15\",\r\n    \"horaInicio\": \"10:35:00Z\",\r\n    \"fechaFin\": \"2023-06-30\",\r\n    \"horaFin\": \"14:45:00Z\",\r\n    \"array_img\": [ \"https://static.vecteezy.com/system/resources/previews/004/772/395/non_2x/red-color-side-cargo-truck-cartoon-illustration-design-free-vector.jpg\" ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/convocatoria/editar/:id",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"convocatoria",
+										"editar",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+<<<<<<< HEAD
+											"value": "64934d59f1202bcbc9662a3b"
+=======
+											"value": "648f7693d012699f08ce2eae"
+>>>>>>> origin/new-rabanales
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DELETE eliminar convocatoria",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "x-token",
+<<<<<<< HEAD
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDhjZDkyZTlhMTE4ZjE5N2Y4MTZjMjIiLCJub21icmUiOiJGdW5kYWNpw7NuIEtpbmFsIiwicm9sIjoiQURNSU5fRlVOREFDSU9OIiwiaWF0IjoxNjg3Mzc1MTc5LCJleHAiOjE2ODczODk1Nzl9.eW4PqnUuBaeauR82K2o91G-StV1i3ZOfRS26LAkPF2M",
+=======
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDhmNzI2YmQwMTI2OTlmMDhjZTJlYTQiLCJub21icmUiOiJVbmljZWYiLCJyb2wiOiJBRE1JTl9GVU5EQUNJT04iLCJpYXQiOjE2ODcxMjM0NzgsImV4cCI6MTY4NzEzNzg3OH0.EDRBTBQyHBXW6YIJ4-ySDF7NnNw1rxBHrn2-eqbCJP8",
+>>>>>>> origin/new-rabanales
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/api/convocatoria/eliminar/:id",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"convocatoria",
+										"eliminar",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+<<<<<<< HEAD
+											"value": "64934ff92990c0ab608f7c7b"
+=======
+											"value": "648f7693d012699f08ce2eae"
+>>>>>>> origin/new-rabanales
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Aplicaciones CRUD",
+					"item": [
+						{
+							"name": "Aplicaciones fundacion CRUD",
+							"item": [
+								{
+									"name": "GET all aplicaciones",
+									"request": {
+										"method": "GET",
+<<<<<<< HEAD
+										"header": [
+											{
+												"key": "x-token",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDhjZDkyZTlhMTE4ZjE5N2Y4MTZjMjIiLCJub21icmUiOiJGdW5kYWNpw7NuIEtpbmFsIiwicm9sIjoiQURNSU5fRlVOREFDSU9OIiwiaWF0IjoxNjg3Mzc2MTAzLCJleHAiOjE2ODczOTA1MDN9.o7ygjnJnYM1mrw3uF8UHZ5Ah8L0okz7JVKkz0Tk92Ec",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "localhost:8080/api/aplicacionVoluntariado/mostrar/6493503b2990c0ab608f7c87",
+=======
+										"header": [],
+										"url": {
+											"raw": "localhost:8080/api/aplicacionVoluntariado/mostrar/648f763542a2a45106be43b8",
+>>>>>>> origin/new-rabanales
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"aplicacionVoluntariado",
+												"mostrar",
+<<<<<<< HEAD
+												"6493503b2990c0ab608f7c87"
+=======
+												"648f763542a2a45106be43b8"
+>>>>>>> origin/new-rabanales
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Aceptar aplicacion",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "localhost:8080/api/aplicacionVoluntariado/aceptar/:id",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"aplicacionVoluntariado",
+												"aceptar",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+<<<<<<< HEAD
+													"value": "64962e7ea145a3e0a7970c1f"
+=======
+													"value": "649333191aa8f8018e4ebb89"
+>>>>>>> origin/new-rabanales
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Rechazar aplicacion",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "localhost:8080/api/aplicacionVoluntariado/rechazar/:id",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"aplicacionVoluntariado",
+												"rechazar",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+<<<<<<< HEAD
+													"value": "649351437318b7bf067e62dd"
+=======
+													"value": "6493337e8365e04f80bf6f85"
+>>>>>>> origin/new-rabanales
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Aplicacion voluntariados CRUD",
+							"item": [
+								{
+									"name": "GET aplicaciones user",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "x-token",
+<<<<<<< HEAD
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDFlODYzMWYzMjUxNzY2YjNiNzQyODEiLCJub21icmUiOiJTdGV2ZW4gUGVuYXRlIiwicm9sIjoiVk9MVU5UQVJJT19ST0xFIiwiaWF0IjoxNjg3Mzc1OTU1LCJleHAiOjE2ODczOTAzNTV9.eku0Pj8qvLNTOkhLd5BOm9q-aJci0B6LThr02fPpO-M",
+=======
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDFlODYzMWYzMjUxNzY2YjNiNzQyODEiLCJub21icmUiOiJTdGV2ZW4gUGVuYXRlIiwicm9sIjoiVk9MVU5UQVJJT19ST0xFIiwiaWF0IjoxNjg3MzY3OTI2LCJleHAiOjE2ODczODIzMjZ9.jhJgtv_93MzsRQjNstQfPTKzEY6F7UctzWuUWrNlwdE",
+>>>>>>> origin/new-rabanales
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "localhost:8080/api/aplicacionVoluntariado/mostrar-voluntario",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"aplicacionVoluntariado",
+												"mostrar-voluntario"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "POST aplicar convocatoria",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "x-token",
+<<<<<<< HEAD
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDFlODYzMWYzMjUxNzY2YjNiNzQyODEiLCJub21icmUiOiJTdGV2ZW4gUGVuYXRlIiwicm9sIjoiVk9MVU5UQVJJT19ST0xFIiwiaWF0IjoxNjg3NTYzNjMwLCJleHAiOjE2ODc1NzgwMzB9.JWwNDmUApCyoz5pt1HkHbSOkfmKJ2DaEBFCcZ73eEWg",
+=======
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDFlODYzMWYzMjUxNzY2YjNiNzQyODEiLCJub21icmUiOiJTdGV2ZW4gUGVuYXRlIiwicm9sIjoiVk9MVU5UQVJJT19ST0xFIiwiaWF0IjoxNjg3MzY3OTI2LCJleHAiOjE2ODczODIzMjZ9.jhJgtv_93MzsRQjNstQfPTKzEY6F7UctzWuUWrNlwdE",
+>>>>>>> origin/new-rabanales
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "localhost:8080/api/aplicacionVoluntariado/aplicar/:id",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"aplicacionVoluntariado",
+												"aplicar",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+<<<<<<< HEAD
+													"value": "649614042d0ac170e63e8c91"
+=======
+													"value": "648f763542a2a45106be43b8"
+>>>>>>> origin/new-rabanales
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "DELETE eliminar aplicacion",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "x-token",
+<<<<<<< HEAD
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDFlODYzMWYzMjUxNzY2YjNiNzQyODEiLCJub21icmUiOiJTdGV2ZW4gUGVuYXRlIiwicm9sIjoiVk9MVU5UQVJJT19ST0xFIiwiaWF0IjoxNjg3Mzc1OTU1LCJleHAiOjE2ODczOTAzNTV9.eku0Pj8qvLNTOkhLd5BOm9q-aJci0B6LThr02fPpO-M",
+=======
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDFlODYzMWYzMjUxNzY2YjNiNzQyODEiLCJub21icmUiOiJTdGV2ZW4gUGVuYXRlIiwicm9sIjoiVk9MVU5UQVJJT19ST0xFIiwiaWF0IjoxNjg3MzY3OTI2LCJleHAiOjE2ODczODIzMjZ9.jhJgtv_93MzsRQjNstQfPTKzEY6F7UctzWuUWrNlwdE",
+>>>>>>> origin/new-rabanales
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "localhost:8080/api/aplicacionVoluntariado/eliminar/:id",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"aplicacionVoluntariado",
+												"eliminar",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+<<<<<<< HEAD
+													"value": "649350692990c0ab608f7c96"
+=======
+													"value": "649331fd29579752ea96f5f7"
+>>>>>>> origin/new-rabanales
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Obtener todas las aplicaciones",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/aplicacionVoluntariado/mostrar-all",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"aplicacionVoluntariado",
+										"mostrar-all"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+<<<<<<< HEAD
+				},
+				{
+					"name": "Buscadores",
+					"item": [
+						{
+							"name": "Buscador voluntario",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDFlODYzMWYzMjUxNzY2YjNiNzQyODEiLCJub21icmUiOiJhZG1pbiIsInJvbCI6IkFETUlOX0FQUCIsImlhdCI6MTY4Nzk5MDcwMCwiZXhwIjoxNjg4MDA1MTAwfQ.ncsi9N5ACjb0LnfxfCZ0QxnJQfBYqU6mb2RV-U3Xr34",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/api/voluntario/buscar/:nombre",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"voluntario",
+										"buscar",
+										":nombre"
+									],
+									"variable": [
+										{
+											"key": "nombre",
+											"value": "steven"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Buscador fundaciones",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDFlODYzMWYzMjUxNzY2YjNiNzQyODEiLCJub21icmUiOiJhZG1pbiIsInJvbCI6IkFETUlOX0FQUCIsImlhdCI6MTY4Nzk5MDcwMCwiZXhwIjoxNjg4MDA1MTAwfQ.ncsi9N5ACjb0LnfxfCZ0QxnJQfBYqU6mb2RV-U3Xr34",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/api/adminFundacion/buscar/:nombre",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"adminFundacion",
+										"buscar",
+										":nombre"
+									],
+									"variable": [
+										{
+											"key": "nombre",
+											"value": "k"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Buscador convocatorias",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDFlODYzMWYzMjUxNzY2YjNiNzQyODEiLCJub21icmUiOiJhZG1pbiIsInJvbCI6IkFETUlOX0FQUCIsImlhdCI6MTY4Nzk5MDcwMCwiZXhwIjoxNjg4MDA1MTAwfQ.ncsi9N5ACjb0LnfxfCZ0QxnJQfBYqU6mb2RV-U3Xr34",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/api/convocatoria/buscar/:nombre",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"convocatoria",
+										"buscar",
+										":nombre"
+									],
+									"variable": [
+										{
+											"key": "nombre",
+											"value": "viveres"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Buscador convocatorias (departamento)",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDFlODYzMWYzMjUxNzY2YjNiNzQyODEiLCJub21icmUiOiJhZG1pbiIsInJvbCI6IkFETUlOX0FQUCIsImlhdCI6MTY4Nzk5MDcwMCwiZXhwIjoxNjg4MDA1MTAwfQ.ncsi9N5ACjb0LnfxfCZ0QxnJQfBYqU6mb2RV-U3Xr34",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/api/convocatoria/mostrar-lugar/ti",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"convocatoria",
+										"mostrar-lugar",
+										"ti"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Buscador aplicaciones",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDFlODYzMWYzMjUxNzY2YjNiNzQyODEiLCJub21icmUiOiJhZG1pbiIsInJvbCI6IkFETUlOX0FQUCIsImlhdCI6MTY4Nzk5MDcwMCwiZXhwIjoxNjg4MDA1MTAwfQ.ncsi9N5ACjb0LnfxfCZ0QxnJQfBYqU6mb2RV-U3Xr34",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/api/aplicacionVoluntariado/buscar/:id",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"aplicacionVoluntariado",
+										"buscar",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "64962e7ea145a3e0a7970c1f"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+=======
+>>>>>>> origin/new-rabanales
+				}
+			]
+		},
+		{
+			"name": "Logear y creacion de Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+<<<<<<< HEAD
+					"raw": "{\r\n    \"correo\": \"admin@corrreo.com\",\r\n    \"password\": \"123456\"\r\n}",
+=======
+					"raw": "{\r\n    \"correo\": \"msalvatierra@corrreo.com\",\r\n    \"password\": \"123456\"\r\n}",
+>>>>>>> origin/new-rabanales
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/auth/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					],
+					"query": [
+						{
+							"key": "x-token",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

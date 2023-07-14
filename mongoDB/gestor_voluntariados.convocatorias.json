@@ -1,0 +1,46 @@
+[{
+  "_id": {
+    "$oid": "649613f22d0ac170e63e8c8a"
+  },
+  "titulo": "Ayuda a niños con discapacidad",
+  "descripcion": "Apoya en labores como transporte y otro tipo de ayuda para personas discapacitadas",
+  "lugar": "Suchitepequez, Guatemala",
+  "cupo": 15,
+  "fecha_inicio": {
+    "$date": "2023-06-20T07:05:00.000Z"
+  },
+  "fecha_fin": {
+    "$date": "2023-07-01T14:45:00.000Z"
+  },
+  "array_img": [
+    "https://definicion.de/wp-content/uploads/2018/09/invidente-1.jpg"
+  ],
+  "fundacion": {
+    "$oid": "648cd92e9a118f197f816c22"
+  },
+  "estado": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "649614042d0ac170e63e8c91"
+  },
+  "titulo": "Ayuda en el transporte de viveres",
+  "descripcion": "Apoya en la movilizacion de 100 libras de granos para alimentacion",
+  "lugar": "Alta Verapaz, Guatemala",
+  "cupo": 0,
+  "fecha_inicio": {
+    "$date": "2023-06-15T10:35:00.000Z"
+  },
+  "fecha_fin": {
+    "$date": "2023-06-30T14:45:00.000Z"
+  },
+  "array_img": [
+    "https://static.vecteezy.com/system/resources/previews/004/772/395/non_2x/red-color-side-cargo-truck-cartoon-illustration-design-free-vector.jpg"
+  ],
+  "fundacion": {
+    "$oid": "648cd92e9a118f197f816c22"
+  },
+  "estado": false,
+  "__v": 0
+}]

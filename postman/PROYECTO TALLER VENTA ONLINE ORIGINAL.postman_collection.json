@@ -1,0 +1,978 @@
+{
+	"info": {
+		"_postman_id": "25e4a7bf-a71f-4436-928c-01c6bf9aca31",
+		"name": "PROYECTO TALLER VENTA ONLINE ORIGINAL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Admin CRUD",
+			"item": [
+				{
+					"name": "POST Agregar Admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Steven Penate\",\r\n    \"correo\": \"spenate@corrreo.com\",\r\n    \"password\": \"123456\",\r\n    \"rol\": \"CLIENTE_ROLE\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/admin/agregar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"admin",
+								"agregar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Mostrar Admin",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA2NDFjMzlhZmFjY2E0NTE2NjI3ZGYiLCJub21icmUiOiJTdGV2ZW4gUmFtaXJleiIsImNhcnQiOltdLCJpYXQiOjE2NzgxMzMxNTgsImV4cCI6MTY3ODE0NzU1OH0.vLvNL8JYuSyriW38-K-7k3UzX4iuSL5ntEBrj0D8c3w",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/admin/mostrar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"admin",
+								"mostrar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Editar Admin",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2M2Y3ZWZjOWM1MDk2ODRjZDI4MjlmOWIiLCJub21icmUiOiJNaWNoYWVsIFNhbHZhdGllcnJhIiwiY2FydCI6W3siaXRlbUlkIjoiNjNmNDI0Yjk3N2JiZDk1YTAzN2RmNDcwIiwicXVhbnRpdHkiOjIsIm5vbWJyZSI6IkNQVSBDT05TVFJVSURPIiwicHJlY2lvIjoxMzAwLjk5fSx7Iml0ZW1JZCI6IjYzZjQyNTcyNzdiYmQ5NWEwMzdkZjQ3OCIsInF1YW50aXR5IjoyLCJub21icmUiOiJURUNMQURPIExFTk9WTyBHQU1JTkciLCJwcmVjaW8iOjQ5OS45OX1dLCJpYXQiOjE2NzgxMzM4NDksImV4cCI6MTY3ODE0ODI0OX0.WV1TVzDp71i6yAYFopkkCDG9PQ1ZB1QBavAsSC52pwA",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Steven Ramirez\",\r\n    \"correo\": \"sramirez@corrreo.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/admin/editar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"admin",
+								"editar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Eliminar Admin",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2M2Y3ZWZjOWM1MDk2ODRjZDI4MjlmOWIiLCJub21icmUiOiJNaWNoYWVsIFNhbHZhdGllcnJhIiwiY2FydCI6W3siaXRlbUlkIjoiNjNmNDI0Yjk3N2JiZDk1YTAzN2RmNDcwIiwicXVhbnRpdHkiOjIsIm5vbWJyZSI6IkNQVSBDT05TVFJVSURPIiwicHJlY2lvIjoxMzAwLjk5fSx7Iml0ZW1JZCI6IjYzZjQyNTcyNzdiYmQ5NWEwMzdkZjQ3OCIsInF1YW50aXR5IjoyLCJub21icmUiOiJURUNMQURPIExFTk9WTyBHQU1JTkciLCJwcmVjaW8iOjQ5OS45OX1dLCJpYXQiOjE2NzgxNTU5NjcsImV4cCI6MTY3ODE3MDM2N30.B5WWMJoEmq-6gjoi9LXBU7AN3CFaJa9Yzi8lux0iDWI",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/admin/eliminar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"admin",
+								"eliminar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cliente CRUD",
+			"item": [
+				{
+					"name": "POST Agregar Cliente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Pedro Hernandez\",\r\n    \"correo\": \"phernandez@corrreo.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/clientes/agregar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clientes",
+								"agregar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Mostrar Cliente",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA2NDFjMzlhZmFjY2E0NTE2NjI3ZGYiLCJub21icmUiOiJTdGV2ZW4gUmFtaXJleiIsImNhcnQiOltdLCJpYXQiOjE2NzgxMzc2NzIsImV4cCI6MTY3ODE1MjA3Mn0.ciGbhqSierhquhRw_N3Y2MFHtd7xBfRbx9mcwlajWUM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/clientes/mostrar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clientes",
+								"mostrar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Editar Cliente",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBhMjMxODk1MmJlMjZiNDMyYzUxZjYiLCJub21icmUiOiJBbmR5IEFtYnJvc2lvIiwiY2FydCI6W3siaXRlbUlkIjoiNjNmNDI0Yjk3N2JiZDk1YTAzN2RmNDcwIiwicXVhbnRpdHkiOjIsIm5vbWJyZSI6IkNQVSBDT05TVFJVSURPIiwicHJlY2lvIjoxMzAwLjk5fSx7Iml0ZW1JZCI6IjY0MGEyMjhiOTUyYmUyNmI0MzJjNTFlMSIsInF1YW50aXR5IjoyLCJub21icmUiOiJBVURJRk9OT1MgWElBT01JIFJFRE1JIEJVRFMgNCBMSVRFIiwicHJlY2lvIjoyOTkuOTl9XSwiaWF0IjoxNjc4Mzg2MTYzLCJleHAiOjE2Nzg0MDA1NjN9.N697SzsmLFpwnWWQRe6GxpeTVHP23go9_Y_4KP8jAdM",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Josue Ambrosio\",\r\n    \"correo\": \"jambrosio@corrreo.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/clientes/editar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clientes",
+								"editar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Eliminar Cliente",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBhMjMxODk1MmJlMjZiNDMyYzUxZjYiLCJub21icmUiOiJBbmR5IEFtYnJvc2lvIiwiY2FydCI6W3siaXRlbUlkIjoiNjNmNDI0Yjk3N2JiZDk1YTAzN2RmNDcwIiwicXVhbnRpdHkiOjIsIm5vbWJyZSI6IkNQVSBDT05TVFJVSURPIiwicHJlY2lvIjoxMzAwLjk5fSx7Iml0ZW1JZCI6IjY0MGEyMjhiOTUyYmUyNmI0MzJjNTFlMSIsInF1YW50aXR5IjoyLCJub21icmUiOiJBVURJRk9OT1MgWElBT01JIFJFRE1JIEJVRFMgNCBMSVRFIiwicHJlY2lvIjoyOTkuOTl9XSwiaWF0IjoxNjc4Mzg2MTYzLCJleHAiOjE2Nzg0MDA1NjN9.N697SzsmLFpwnWWQRe6GxpeTVHP23go9_Y_4KP8jAdM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/clientes/eliminar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clientes",
+								"eliminar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Producto CRUD",
+			"item": [
+				{
+					"name": "POST Agregar Producto",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA2NDFjMzlhZmFjY2E0NTE2NjI3ZGYiLCJub21icmUiOiJTdGV2ZW4gUmFtaXJleiIsImNhcnQiOltdLCJpYXQiOjE2NzgzNzc0NDIsImV4cCI6MTY3ODM5MTg0Mn0.U7koE2hxvP8M1FzyfGpmuzb9GBJ_zAbMdbmUMLFWZ_Y",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Audifonos Xiaomi Redmi Buds 4 PRO\",\r\n    \"precio\": 399.99,\r\n    \"stock\": 15,\r\n    \"categoria\": \"640a224a952be26b432c51d1\",\r\n    \"descripcion\": \"Audifonos Compatible con Android de gama alta\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/productos/agregar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"productos",
+								"agregar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Mostrar Producto",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA2NDFjMzlhZmFjY2E0NTE2NjI3ZGYiLCJub21icmUiOiJTdGV2ZW4gUmFtaXJleiIsImNhcnQiOltdLCJpYXQiOjE2NzgzNzc0NDIsImV4cCI6MTY3ODM5MTg0Mn0.U7koE2hxvP8M1FzyfGpmuzb9GBJ_zAbMdbmUMLFWZ_Y",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/productos/mostrar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"productos",
+								"mostrar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Editar Producto",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA2NDFjMzlhZmFjY2E0NTE2NjI3ZGYiLCJub21icmUiOiJTdGV2ZW4gUmFtaXJleiIsImNhcnQiOltdLCJpYXQiOjE2NzgzNzc0NDIsImV4cCI6MTY3ODM5MTg0Mn0.U7koE2hxvP8M1FzyfGpmuzb9GBJ_zAbMdbmUMLFWZ_Y",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Audifonos Xiaomi Redmi Buds 4 Lite\",\r\n    \"precio\": 299.99,\r\n    \"stock\": 16,\r\n    \"categoria\": \"640a01f991cfaefc717637c4\",\r\n    \"descripcion\": \"Audifonos Compatible con Android de gama media\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/productos/editar/640a228b952be26b432c51e1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"productos",
+								"editar",
+								"640a228b952be26b432c51e1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Eliminar Producto",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA2NDFjMzlhZmFjY2E0NTE2NjI3ZGYiLCJub21icmUiOiJTdGV2ZW4gUmFtaXJleiIsImNhcnQiOltdLCJpYXQiOjE2NzgzODM0MzQsImV4cCI6MTY3ODM5NzgzNH0.xtYLfjxOvIiELD1zLxn0BhVYYVDP4ufysK1-gu0Slww",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/productos/eliminar/640a228b952be26b432c51e1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"productos",
+								"eliminar",
+								"640a228b952be26b432c51e1"
+							],
+							"query": [
+								{
+									"key": "x-token",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Mostra Productos Agotados",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA2NDFjMzlhZmFjY2E0NTE2NjI3ZGYiLCJub21icmUiOiJTdGV2ZW4gUmFtaXJleiIsImNhcnQiOltdLCJpYXQiOjE2NzgzNzgxMTEsImV4cCI6MTY3ODM5MjUxMX0.IF7eCE9HmOiPuZNB8wAuwSu0zzgmayL91AXZpDBoSvI",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/productos/mostrar/agotados",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"productos",
+								"mostrar",
+								"agotados"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Mostra Productos Mas vendidos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/productos/mostrar/masvendidos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"productos",
+								"mostrar",
+								"masvendidos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Categoria CRUD",
+			"item": [
+				{
+					"name": "POST Categoria Agregar",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA2NDFjMzlhZmFjY2E0NTE2NjI3ZGYiLCJub21icmUiOiJTdGV2ZW4gUmFtaXJleiIsImNhcnQiOltdLCJpYXQiOjE2NzgzNzc0NDIsImV4cCI6MTY3ODM5MTg0Mn0.U7koE2hxvP8M1FzyfGpmuzb9GBJ_zAbMdbmUMLFWZ_Y",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"BOCINAS\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/categorias/agregar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"categorias",
+								"agregar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Categoria Mostrar",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/categorias/mostrar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"categorias",
+								"mostrar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Categoria Eliminar",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA2NDFjMzlhZmFjY2E0NTE2NjI3ZGYiLCJub21icmUiOiJTdGV2ZW4gUmFtaXJleiIsImNhcnQiOltdLCJpYXQiOjE2NzgzNzc0NDIsImV4cCI6MTY3ODM5MTg0Mn0.U7koE2hxvP8M1FzyfGpmuzb9GBJ_zAbMdbmUMLFWZ_Y",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/categorias/eliminar/640a224a952be26b432c51d1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"categorias",
+								"eliminar",
+								"640a224a952be26b432c51d1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Categoria Editar",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA2NDFjMzlhZmFjY2E0NTE2NjI3ZGYiLCJub21icmUiOiJTdGV2ZW4gUmFtaXJleiIsImNhcnQiOltdLCJpYXQiOjE2NzgzNzc0NDIsImV4cCI6MTY3ODM5MTg0Mn0.U7koE2hxvP8M1FzyfGpmuzb9GBJ_zAbMdbmUMLFWZ_Y",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"AUDIFONOS\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/categorias/editar/640a224a952be26b432c51d1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"categorias",
+								"editar",
+								"640a224a952be26b432c51d1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Carrito CRUD",
+			"item": [
+				{
+					"name": "PUT EDITAR al Carrito",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2M2Y3ZDYxOTAyNzFlNDQ0ODdiYzQ0MWQiLCJub21icmUiOiJTZXJnaW8gQ3J1eiIsImNhcnQiOltdLCJpYXQiOjE2NzcxODY1OTEsImV4cCI6MTY3NzIwMDk5MX0.0wUwbf7J5ll0PFvpozy4Kx_ecztTrG4mA6U8_2UdqR8",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/cart/editar/63f424fa77bbd95a037df474",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"cart",
+								"editar",
+								"63f424fa77bbd95a037df474"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Agregar al Carrito",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBhMjMxODk1MmJlMjZiNDMyYzUxZjYiLCJub21icmUiOiJBbmR5IEFtYnJvc2lvIiwiY2FydCI6W10sImlhdCI6MTY3ODM4NjA1NiwiZXhwIjoxNjc4NDAwNDU2fQ.DiqkZzCsDf-m5v0zIvkrYNox3IjJYg_hjDAAuJDEPjE",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/cart/agregar/640a228b952be26b432c51e1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"cart",
+								"agregar",
+								"640a228b952be26b432c51e1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Mostrar Carrito",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2M2Y3ZDYxOTAyNzFlNDQ0ODdiYzQ0MWQiLCJub21icmUiOiJTZXJnaW8gQ3J1eiIsImNhcnQiOltdLCJpYXQiOjE2NzcxODY1OTEsImV4cCI6MTY3NzIwMDk5MX0.0wUwbf7J5ll0PFvpozy4Kx_ecztTrG4mA6U8_2UdqR8",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/cart/mostrar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"cart",
+								"mostrar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Eliminar del Carrito",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2M2Y3ZDYxOTAyNzFlNDQ0ODdiYzQ0MWQiLCJub21icmUiOiJTZXJnaW8gQ3J1eiIsImNhcnQiOltdLCJpYXQiOjE2NzcxODY1OTEsImV4cCI6MTY3NzIwMDk5MX0.0wUwbf7J5ll0PFvpozy4Kx_ecztTrG4mA6U8_2UdqR8",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/cart/eliminar/63f424b977bbd95a037df470",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"cart",
+								"eliminar",
+								"63f424b977bbd95a037df470"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Buscar por Nombre",
+			"item": [
+				{
+					"name": "Buscar Productos por Nombre",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/buscar/productos/AUDIFONOS",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"buscar",
+								"productos",
+								"AUDIFONOS"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Productos por Categoria",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/buscar/categorias/TECLADO",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"buscar",
+								"categorias",
+								"TECLADO"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Factura CRUD",
+			"item": [
+				{
+					"name": "GET Mostrar Facturas",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBhMjMxODk1MmJlMjZiNDMyYzUxZjYiLCJub21icmUiOiJBbmR5IEFtYnJvc2lvIiwiY2FydCI6W3siaXRlbUlkIjoiNjNmNDI0Yjk3N2JiZDk1YTAzN2RmNDcwIiwicXVhbnRpdHkiOjIsIm5vbWJyZSI6IkNQVSBDT05TVFJVSURPIiwicHJlY2lvIjoxMzAwLjk5fSx7Iml0ZW1JZCI6IjY0MGEyMjhiOTUyYmUyNmI0MzJjNTFlMSIsInF1YW50aXR5IjoyLCJub21icmUiOiJBVURJRk9OT1MgWElBT01JIFJFRE1JIEJVRFMgNCBMSVRFIiwicHJlY2lvIjoyOTkuOTl9XSwiaWF0IjoxNjc4Mzg2MTYzLCJleHAiOjE2Nzg0MDA1NjN9.N697SzsmLFpwnWWQRe6GxpeTVHP23go9_Y_4KP8jAdM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/facturas/mostrar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"facturas",
+								"mostrar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Agregar Factura",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDBhMjMxODk1MmJlMjZiNDMyYzUxZjYiLCJub21icmUiOiJBbmR5IEFtYnJvc2lvIiwiY2FydCI6W3siaXRlbUlkIjoiNjNmNDI0Yjk3N2JiZDk1YTAzN2RmNDcwIiwicXVhbnRpdHkiOjIsIm5vbWJyZSI6IkNQVSBDT05TVFJVSURPIiwicHJlY2lvIjoxMzAwLjk5fSx7Iml0ZW1JZCI6IjY0MGEyMjhiOTUyYmUyNmI0MzJjNTFlMSIsInF1YW50aXR5IjoyLCJub21icmUiOiJBVURJRk9OT1MgWElBT01JIFJFRE1JIEJVRFMgNCBMSVRFIiwicHJlY2lvIjoyOTkuOTl9XSwiaWF0IjoxNjc4Mzg2MTYzLCJleHAiOjE2Nzg0MDA1NjN9.N697SzsmLFpwnWWQRe6GxpeTVHP23go9_Y_4KP8jAdM",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"NITReceptor\": \"09123476-2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/facturas/agregar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"facturas",
+								"agregar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Editar Factura",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/facturas/editar/afdafaf",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"facturas",
+								"editar",
+								"afdafaf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Eliminar Factura",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/facturas/eliminar/afdafaf",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"facturas",
+								"eliminar",
+								"afdafaf"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "FUNCIONES ADMIN",
+			"item": [
+				{
+					"name": "Eliminar Usuario By Admin",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA2NDFjMzlhZmFjY2E0NTE2NjI3ZGYiLCJub21icmUiOiJTdGV2ZW4gUmFtaXJleiIsImNhcnQiOltdLCJpYXQiOjE2NzgzNzgzNDQsImV4cCI6MTY3ODM5Mjc0NH0.hEu8BCMuHN1JwsYdyPG_R5upvcgTlrmzKlg8RNFH120",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/admin/eliminar/usuario/640a2318952be26b432c51f6",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"admin",
+								"eliminar",
+								"usuario",
+								"640a2318952be26b432c51f6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Editar Usuario By Admin",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA2NDFjMzlhZmFjY2E0NTE2NjI3ZGYiLCJub21icmUiOiJTdGV2ZW4gUmFtaXJleiIsImNhcnQiOltdLCJpYXQiOjE2NzgzNzgzNDQsImV4cCI6MTY3ODM5Mjc0NH0.hEu8BCMuHN1JwsYdyPG_R5upvcgTlrmzKlg8RNFH120",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Andy Ambrosio\",\r\n    \"correo\": \"aambrosio@corrreo.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/admin/editar/usuario/640a2318952be26b432c51f6",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"admin",
+								"editar",
+								"usuario",
+								"640a2318952be26b432c51f6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Mostrar Productos comprados por Usuario BY Admin",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA2NDFjMzlhZmFjY2E0NTE2NjI3ZGYiLCJub21icmUiOiJTdGV2ZW4gUmFtaXJleiIsImNhcnQiOltdLCJpYXQiOjE2NzgzODM4ODMsImV4cCI6MTY3ODM5ODI4M30.2EWjL0l9ZETjGMtiYet3HaoHSa1LIA4mAZk8dXZ0KKo",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/admin/mostrar/compras/640a2318952be26b432c51f6",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"admin",
+								"mostrar",
+								"compras",
+								"640a2318952be26b432c51f6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Logear y creacion de Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"correo\": \"aambrosio@corrreo.com\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/auth/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					],
+					"query": [
+						{
+							"key": "x-token",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

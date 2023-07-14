@@ -1,0 +1,13 @@
+[{
+  "_id": {
+    "$oid": "641e8631f3251766b3b74281"
+  },
+  "nombre": "Steven Penate",
+  "correo": "msalvatierra@corrreo.com",
+  "password": "$2a$10$i7qPI45B32chIn7IWKMl/ONdm8wICz9x3JR83O9z7y0F/k27QyZdS",
+  "rol": "ADMIN_APP",
+  "estado": true,
+  "google": false,
+  "cart": [],
+  "__v": 0
+}]
